@@ -1,6 +1,12 @@
 package grails3.rest.sample
 
-class PersonController {
+import grails.rest.RestfulController
 
-    def index() { }
+class PersonController extends RestfulController{
+
+    static responseFormats = ['json', 'xml']
+
+    PersonController(){
+        super(Person)
+    }
 }
