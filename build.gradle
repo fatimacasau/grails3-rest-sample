@@ -63,7 +63,7 @@ dependencies {
 
     runtime "org.grails.plugins:asset-pipeline"
     runtime "org.grails.plugins:scaffolding"
-
+    compile ("org.codehaus.groovy.modules.http-builder:http-builder:0.7")
     testCompile "org.grails:grails-plugin-testing"
     testCompile "org.grails.plugins:geb"
 

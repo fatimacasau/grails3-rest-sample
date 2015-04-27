@@ -1,5 +1,8 @@
 package grails3.rest.sample
 
+import grails.rest.Resource
+
+@Resource(uri='/people', formats=['json', 'xml'])
 class Person {
 
     String firstName
